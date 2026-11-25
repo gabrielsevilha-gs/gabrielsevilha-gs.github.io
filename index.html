@@ -1,19 +1,74 @@
-Crie uma página de portfólio em um único arquivo index.html, com o CSS dentro do próprio arquivo, sem bibliotecas externas e sem JavaScript. A página deve ficar bonita e funcionar bem no celular. Escreva em português.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise de Vendas de uma Loja</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 { font-size: 28px; margin-bottom: 10px; }
+    header p { color: #d1d5db; }
+    main { max-width: 900px; margin: 30px auto; padding: 20px; }
+    section {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+    section h2 { color: #2563eb; font-size: 20px; margin-bottom: 12px; }
+    section p { margin-bottom: 10px; }
+    footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 23px; }
+      main { padding: 15px; margin: 15px auto; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Análise de Vendas de uma Loja</h1>
+    <p>Projeto de análise exploratória de dados</p>
+  </header>
 
-Sobre mim
-Nome: [seu nome completo]
-Curso: [seu curso]
-Faculdade: [onde você estuda ou estudou]
-Uma frase sobre mim: [o que você gosta de fazer]
-LinkedIn: [link do seu perfil, ou apague esta linha]
-E-mail profissional: [seu e-mail, ou apague esta linha]
+  <main>
+    <section>
+      <h2>Problema</h2>
+      <p>Dificuldade em identificar os produtos mais vendidos, os períodos de maior faturamento e as tendências de vendas, prejudicando o planejamento comercial.</p>
+    </section>
 
-Projeto: [nome do projeto]
-Problema: [qual era o problema e para quem]
-O que eu fiz: [a solução em uma ou duas frases]
-Como eu fiz: [dados, método e ferramentas]
-Resultado: [o que você conseguiu, só números reais]
+    <section>
+      <h2>O que eu fiz</h2>
+      <p>Desenvolvi uma análise de dados para identificar padrões de vendas, avaliar o desempenho dos produtos e compreender a evolução do faturamento.</p>
+    </section>
 
-Coloque no topo o meu nome, o curso e a faculdade. Depois, o projeto em quatro blocos com os títulos Problema, O que eu fiz, Como eu fiz e Resultado. No rodapé, os meus contatos e o link do meu GitHub: https://github.com/[seu-usuario]
+    <section>
+      <h2>Como eu fiz</h2>
+      <p>Utilizei uma base de dados de vendas em formato CSV, realizando tratamento e análise exploratória com Python, Pandas e Matplotlib.</p>
+    </section>
 
-Use somente as informações acima: não invente números, empresas, depoimentos, fotos nem links. Não inclua formulários. Responda só com o código completo do arquivo.
+    <section>
+      <h2>Resultado</h2>
+      <p>A análise permite identificar os produtos com maior volume de vendas, os períodos de maior faturamento e as principais tendências comerciais, fornecendo informações para apoiar a tomada de decisões.</p>
+      <p><em>Os resultados quantitativos serão incluídos após a análise dos dados reais.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto de Análise de Dados</p>
+  </footer>
+</body>
+</html>
